@@ -7,8 +7,9 @@ public class Principal {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Digite seu salario: ");
-        double salarioBruto = scanner.nextDouble();
+        double salarioBruto = EntradaSaida.obterSalario(scanner);
+
+        double horasExtras = EntradaSaida.obterHorasExtras(scanner);
 
         Calculo calculo = new Calculo(salarioBruto);
 
@@ -21,9 +22,10 @@ public class Principal {
         String salarioPosDescontoConvenio = calculo.DescontoConvenio(salarioBruto);
         System.out.println(salarioPosDescontoConvenio);
 
+        String salarioPosAcrescimoHorasExtras = calculo.AcrescimoHoraExtra(salarioBruto, horasExtras);
+        System.out.println(salarioPosAcrescimoHorasExtras);
 
-
+        String salarioLiquido = calculo.SalarioLiquido(salarioBruto, horasExtras);
+        System.out.println(salarioLiquido);
     }
-
-
 }

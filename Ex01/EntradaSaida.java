@@ -12,8 +12,6 @@ public class EntradaSaida {
             nota = scanner.nextDouble();
         } while (!Validacao.validarNota(nota));
         return nota;
-
-
     }
 
     public static String obterTipoMedia(Scanner scanner) {
