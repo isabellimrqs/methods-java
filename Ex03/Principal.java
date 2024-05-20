@@ -10,6 +10,17 @@ public class Principal {
         double salarioAtual = EntradaSaida.obterSalarioAtual(scanner);
         double quantidadeEmprestimo = EntradaSaida.obterQuantidadeEmprestimo(scanner);
 
+        Calculo calculo = new Calculo();
+
+        double totalJuros = calculo.calcularValorTotalJuros(quantidadeEmprestimo);
+        System.out.println(totalJuros);
+
+        double valorTotalEmprestimo = calculo.calcularValorTotalEmprestimo(quantidadeEmprestimo, totalJuros);
+        System.out.println(valorTotalEmprestimo);
+
+        double valorParcela = calculo.calcularValorParcela(valorTotalEmprestimo);
+        System.out.println(valorParcela);
+
 
     }
 }

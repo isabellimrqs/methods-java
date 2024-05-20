@@ -2,13 +2,18 @@ package Ex03;
 
 public class Calculo {
 
-    double percentualAcrescimo;
-    double parcelasEmprestimo;
+    double percentualAcrescimo = 0.35;
+    int parcelasEmprestimo = 24;
 
-    public Calculo(double percentualAcrescimo, double parcelasEmprestimo){
-        this.parcelasEmprestimo = 24;
-        this.percentualAcrescimo = 0.35;
+    public double calcularValorTotalJuros(double quantidadeEmprestimo) {
+        return quantidadeEmprestimo * percentualAcrescimo;
     }
 
+    public double calcularValorTotalEmprestimo(double quantidadeEmprestimo, double totalJuros) {
+        return quantidadeEmprestimo + totalJuros;
+    }
 
+    public double calcularValorParcela(double valorTotalEmprestimo) {
+        return valorTotalEmprestimo / parcelasEmprestimo;
+    }
 }
