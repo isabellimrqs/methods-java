@@ -8,7 +8,11 @@ public class Validacao {
         this.quantidadeEmprestimo = quantidadeEmprestimo;
     }
 
-    public boolean validaQuantidade(double quantidadeEmprestimo){
+    public static boolean validaQuantidade(double quantidadeEmprestimo){
         return quantidadeEmprestimo <= 200000;
+    }
+
+    public static boolean validaSeUltrapassaQuinzePorCentoSalario(double salarioAtual, double valorParcela){
+        return valorParcela <= (salarioAtual * 0.15);
     }
 }

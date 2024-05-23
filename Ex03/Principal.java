@@ -7,8 +7,9 @@ public class Principal {
 
         Scanner scanner = new Scanner(System.in);
 
-        double salarioAtual = EntradaSaida.obterSalarioAtual(scanner);
         double quantidadeEmprestimo = EntradaSaida.obterQuantidadeEmprestimo(scanner);
+        double salarioAtual = EntradaSaida.obterSalarioAtual(scanner);
+
 
         Calculo calculo = new Calculo();
 
@@ -20,6 +21,12 @@ public class Principal {
 
         double valorParcela = calculo.calcularValorParcela(valorTotalEmprestimo);
         System.out.println(valorParcela);
+
+
+
+
+
+
 
 
     }
