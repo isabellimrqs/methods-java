@@ -3,9 +3,15 @@ import java.util.Scanner;
 
 public class Principal {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Chgamos a parte mais esperada dos mês..."); 
+        Thread.sleep(1000);
+        System.out.println("O PAGAMENTO!!!!!!!!! ❤（っ＾▿＾）");
+        Thread.sleep(1000);
+
 
         double salarioBruto = EntradaSaida.obterSalario(scanner);
 

@@ -3,8 +3,14 @@ package Ex03;
 import java.util.Scanner;
 
 public class Principal {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Seja bem-vindo à IsaEmpresta!");
+        Thread.sleep(1000);
+        System.out.println("O melhor estabelecimento para você se endividar!! (ɔ˘ ³(ˆ‿ˆc)");
+        Thread.sleep(1000);
+
 
         double salarioAtual = EntradaSaida.obterSalarioAtual(scanner);
         double quantidadeEmprestimo = EntradaSaida.obterQuantidadeEmprestimo(scanner);

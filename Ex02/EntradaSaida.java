@@ -6,7 +6,7 @@ public class EntradaSaida {
     public static double obterSalario(Scanner scanner) {
         double salarioBruto;
         while (true) {
-            System.out.print("Digite seu salario: R$");
+            System.out.print("Por favor, digite seu salario: R$");
             salarioBruto = scanner.nextDouble();
 
             if (Validacao.validaSalario(salarioBruto)) {
